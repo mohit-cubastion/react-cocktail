@@ -4,7 +4,7 @@ import Home from './Home'
 import Ingrediant from './Ingrediant'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
-import {Input, Menu} from 'semantic-ui-react'
+import { Menu} from 'semantic-ui-react'
 
 
 const NavBar = () =>{
@@ -16,11 +16,9 @@ const NavBar = () =>{
         setSelectedTag(name)
     }
 
-    console.log(selectedTag)
-
     return (
         <Router>
-        <Menu secondary>
+        <Menu secondary style={{marginTop: 10}}>
             <Link to={'/'}>
             <Menu.Item 
                 name = 'home'

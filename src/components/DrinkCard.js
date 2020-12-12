@@ -1,10 +1,8 @@
 import React from 'react';
 import './DrinkCard.css'
-import { Card, Icon, Image } from 'semantic-ui-react'
+import { Card, Image } from 'semantic-ui-react'
 
 const DrinkCard = (props) =>{
-    console.log(props.drinkData);
-    
     return(
         <Card className='card'>
             <Image src={props.drinkData.strDrinkThumb} wrapped ui={false} />

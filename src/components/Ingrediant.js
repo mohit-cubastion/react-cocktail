@@ -8,7 +8,6 @@ import NoDataCard from './NoDataCard';
 const Ingrediant = () =>{
 
     const [ingrediantList , setIngrediantList] = useState([]);
-    const [inputValue , setInputValue] = useState('')
     const [cardValue, setCardValue] = useState([]);
     
 
@@ -24,7 +23,6 @@ const Ingrediant = () =>{
     },[])
 
     const getIngrediantData = (event,value) =>{
-        setInputValue(value);
 
        const callIngrediantAPI = async() =>{
         

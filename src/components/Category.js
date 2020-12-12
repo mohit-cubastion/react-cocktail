@@ -29,8 +29,6 @@ const Category = () =>{
         
     }
 
-    console.log(drink)
-
     let allCategories =categories.map((item,index)=>{
         return(
             
