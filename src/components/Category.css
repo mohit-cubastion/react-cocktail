@@ -1,0 +1,73 @@
+.category-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: auto
+}
+.container{
+    cursor: pointer;
+}
+
+.category{
+    border: 1px solid black;
+  
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.noimage-container{
+    height: 387px;
+    
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.noimage-heading{
+    text-align: center;
+    padding-top: 161px;
+}
+
+.btn {
+    /* margin: 20px auto; */
+    margin-top: 10px;
+    border: none;
+    padding: 10px 44px;
+    font-size: 15px;
+    position: relative;
+    cursor: pointer;
+}
+.btn::before {
+    transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    content: "";
+    width: 50%;
+    height: 100%;
+    background: #fec8c1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.btn .btn-text {
+    color: white;
+    mix-blend-mode: difference;
+}
+.btn:hover::before {
+    background: #fec8c1;
+    width: 100%;
+}
+.btn.rounded {
+    border-radius: 50px;
+}
+.btn.rounded .text-green {
+    color: #00f0b5;
+    mix-blend-mode: difference;
+}
+.btn.rounded::before {
+    border-radius: 50px;
+    width: 25%;
+    background: #00f0b5;
+}
+.btn.rounded:hover::before {
+    background: #00f0b5;
+    width: 100%;
+}
